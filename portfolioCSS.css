@@ -1,3 +1,10 @@
+/*
+	Jacqueline Lee
+	Portfolio
+	Created November 2017
+	portfolioCSS.css
+*/
+
 body, html {
 	height: 100%;
 	background-color: white;
@@ -9,7 +16,6 @@ body, html {
 
 h2 {
 	color: rgb(27, 62, 74);
-	/*background-color: rgba(27, 62, 74, .75);*/
 	padding: .5em .5em;
 
 	margin: .5em auto;
@@ -29,12 +35,6 @@ footer {
 }
 
 #home {
-	/*
-	background: url(coverPhoto1.jpg) bottom right;
-	background-size: cover;
-	background-position: center; 
-	background-repeat: no-repeat;
-	*/
 	width: auto;
 	height: 100%;
 	overflow:auto;
@@ -164,7 +164,22 @@ div {
 }
 
 #experience .oneexperience p {
-	text-align: left;
+	margin-bottom: .5em;
+}
+
+button {
+	margin-bottom: 1em;
+	border-color: rgb(44, 65, 67);
+	border-radius: 1.5em;
+	background-color: white;
+}
+
+#experience #Amazon #AmazonDescrip {
+	display: none;
+}
+
+#experience #Evisions #EvisionsDescrip {
+	display: none;
 }
 
 #contactme {
