@@ -126,6 +126,10 @@ div {
 
 #aboutme img {
 	margin-top: 2em;
+	height: auto;
+	width: 30%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #aboutme div.bio, #aboutme div.skills {
