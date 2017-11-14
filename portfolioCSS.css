@@ -105,10 +105,10 @@ footer {
 	text-decoration: none;
 }
 
-#home #navigation nav ul a:hover {
-	color: #404040;
+#home #navigation a:hover {
+	color: rgb(27, 62, 74);
+	background-color: white;
 }
-
 
 div {
 	width: 80%;
@@ -213,6 +213,17 @@ button {
 	vertical-align: middle;
 }
 
+
+/* Larger Screens */
+@media screen and ( min-width: 1600px ) {
+	body {
+		font-size: 1.8em;
+	}
+
+	#aboutme div.bioPic img {
+		width: 450px;
+	}
+}
 
 /* Tablets */
 @media screen and ( max-width: 1024px ) {
