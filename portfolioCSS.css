@@ -1,0 +1,299 @@
+body, html {
+	height: 100%;
+	background-color: white;
+	color: rgba(0, 0, 0, .8);
+	text-align: center;
+	font-size: 1.1em;
+	font-family: 'Convergence';
+}
+
+h2 {
+	color: rgb(27, 62, 74);
+	/*background-color: rgba(27, 62, 74, .75);*/
+	padding: .5em .5em;
+
+	margin: .5em auto;
+	top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+footer {
+	color: white;
+	background-color: rgba(0, 0, 0, .8);
+	font-size: .75em;
+	padding: .5em .5em;
+}
+
+#home {
+	/*
+	background: url(coverPhoto1.jpg) bottom right;
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+	*/
+	width: auto;
+	height: 100%;
+	overflow:auto;
+	background-color: rgb(27, 62, 74);
+}
+
+#home header {
+	color: white;
+	margin-top: 10%;
+	font-size: 2em;
+	width: 100%;
+}
+
+#home header h1 {
+	font-family: 'Merienda';
+	font-size: 2.5em;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+#home header h5 {
+	font-family: 'Allan';
+	margin: 0em 0em;
+	font-size: 1.2em;
+}
+
+#home header .description {
+	display: inline-block;
+	width: 30%;
+}
+
+#home header .description span {
+	display: block;
+	margin-top: 0em;
+	margin-bottom: .4em;
+}
+
+#home header .description #FE {
+	font-family: 'Snippet';
+}
+
+#home header .description #SE {
+	font-family: 'Courier New';
+}
+
+#home header .description #PHOTO {
+	font-family: 'Allerta Stencil';
+}
+
+#home #navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	opacity: 100%;
+	height: 2.5em;
+	width: 100%;
+	
+}
+
+#home #navigation a {
+	float:center;
+	display:inline-block;
+	color: rgb(27, 62, 74);
+	padding: .7em 1em;
+	text-align: center;
+	text-decoration: none;
+}
+
+#home #navigation nav ul a:hover {
+	color: #404040;
+}
+
+
+div {
+	width: 80%;
+	margin: 1em auto;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+#aboutme {
+	background-color: white;
+	padding-bottom: 1em;
+}
+
+#aboutme img {
+	margin-top: 2em;
+}
+
+#aboutme div.bio, #aboutme div.skills {
+	text-align: left;
+}
+
+#aboutme div.bioPic {
+    display: inline-block;
+    width: 35%;
+}
+
+#aboutme div.bioPic img {
+	height: auto;
+	width: 275px;
+    background-size: contain;
+}
+
+#experience {
+	background-color: #f2f2f2;
+	padding-bottom: 1em;
+	overflow:auto;	
+}
+
+#experience div {
+	background-color: white;
+}
+
+#experience .oneexperience, #aboutme div.bio, #aboutme div.skills {
+	border: 2px solid rgb(44, 65, 67);
+	border-radius: 1.5em;
+	box-shadow: .4em .4em .4em rgb(44, 65, 67);
+	padding: 0em 1em;
+	margin: .7em .7em;
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+}
+
+#experience .oneexperience p {
+	text-align: left;
+}
+
+#contactme {
+	clear: both;
+	color: white;
+	background-color: rgb(27, 62, 74);
+	padding-bottom: 1.5em;
+}
+
+#contactme h2 {
+	color: white;
+}
+
+#contactme div.info {
+	display: inline;
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#contactme div.info a {
+	color: white;
+}
+
+.fa {
+	vertical-align: middle;
+}
+
+
+/* Tablets */
+@media screen and ( max-width: 1024px ) {
+	#home header .description {
+		display: inline-block;
+		width: 90%;
+	}
+
+	#home header h1 {
+		font-size: 2em;
+	}
+
+	#aboutme div.bioPic {
+		margin: 0 0;
+	}
+
+	#aboutme div.bioPic img {
+		height: auto;
+		width: 90%;
+	    background-size: contain;
+	    margin: 0 0;
+	}
+
+	#experience .oneexperience, #aboutme div.bio, #aboutme div.skills {
+		width: 80%;
+	}
+
+	#contactme div.info {
+		display: block;
+		padding: 0 7.5%;
+	}
+}
+
+/* Small screens and mobile phones */
+@media screen and ( max-width: 640px ) {
+	body, html {
+		font-size: 1em;
+	}
+
+	div {
+		float: none;
+		width: 90%;
+	}
+
+	h2 {
+		width: 80%;
+	}
+
+	#home #navigation a {
+		padding: .7em .3em;
+	}
+
+	#home header {
+		margin-top: 17%;
+	}
+
+	#home header h1 {
+		font-size: 1.2em;
+	}
+
+	#home header h5 {
+		font-size: 1em;
+	}
+
+	#home header .description {
+		display: inline-block;
+		width: 90%;
+		margin: .9em 0em;
+	}
+
+	#home header .description span {
+		margin-bottom: .2em;
+	}
+
+	#home header .description #SE {
+		font-size: .9em;
+	}
+
+	#aboutme img {
+		width: 95%;
+		height: auto;
+	}
+
+	#aboutme div.bioPic {
+		margin: 0 0;
+	}
+
+	#aboutme div.bioPic img {
+		height: auto;
+		width: 100%;
+	    background-size: contain;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	#experience .oneexperience, #aboutme div.bio, #aboutme div.skills {
+		width: 80%;
+	}
+
+	#contactme div.info {
+		display: block;
+		padding: 0 0;
+	}
+}
