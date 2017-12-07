@@ -32,3 +32,15 @@ function showEvisionsInfo() {
         document.getElementById("EvisionsButton").innerHTML = "Show Description";
     }
 }
+
+/**
+    Author of pulsating effect: jsfiddle author AlienWebguy.
+    http://jsfiddle.net/AlienWebguy/bSWMC/.
+    Originally found answer at https://stackoverflow.com/questions/7223503/jquery-pulsate-times.
+**/
+$(function() {
+    (function pulse() {
+        $('#toggleUnderscore').delay(50).fadeOut('slow').delay(0).fadeIn('fast',pulse);
+    })();
+});
+

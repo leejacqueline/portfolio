@@ -6,7 +6,7 @@
 */
 
 body, html {
-	height: 100%;
+	height: 98%;
 	background-color: white;
 	color: rgba(0, 0, 0, .8);
 	text-align: center;
@@ -16,19 +16,19 @@ body, html {
 
 h2 {
 	color: rgb(27, 62, 74);
-	padding: .5em .5em;
-	margin: .5em auto;
+	padding: .3em .3em;
+	margin: .5em 0;
 	top:0;
     bottom: 0;
     left: 0;
     right: 0;
     font-size: 2em;
-    text-decoration: underline;
+	background-color: rgba(209, 156, 100, .8);
 }
 
 footer {
 	color: white;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgb(27, 62, 74);
 	font-size: .75em;
 	padding: .5em .5em;
 }
@@ -46,14 +46,14 @@ footer {
 	color: white;
 	margin-top: 10%;
 	font-size: 2em;
-	width: 100%;
+	width: 98%;
 }
 
 #home header h1 {
 	font-family: 'Merienda';
 	font-size: 2.5em;
-	margin-top: 0em;
-	margin-bottom: 1em;
+	vertical-align: middle;
+	display: inline-block;
 }
 
 #home header h5 {
@@ -64,35 +64,25 @@ footer {
 
 #home header .description {
 	display: inline-block;
-	width: 30%;
+	margin: 0;
 }
 
 #home header .description span {
-	display: block;
 	margin-top: 0em;
 	margin-bottom: .4em;
-}
-
-#home header .description #FE {
-	font-family: 'Snippet';
 }
 
 #home header .description #SE {
 	font-family: 'Courier New';
 }
 
-#home header .description #PHOTO {
-	font-family: 'Happy Monkey';
-}
-
 #home #navigation {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 99%;
 	background-color: rgb(27, 62, 74);
 	opacity: 100%;
 	height: 2.5em;
-	width: 100%;
 	margin-top: 0;
 	border: 2px solid white;
 }
@@ -121,21 +111,15 @@ div {
 }
 
 #aboutme {
-	background-color: white;
 	padding-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 #aboutme img {
-	margin-top: 2em;
 	height: auto;
-	width: 30%;
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 35%;
 }
 
-#aboutme div.bio, #aboutme div.skills {
-	text-align: left;
-}
 
 #aboutme div.bioPic {
     display: inline-block;
@@ -144,24 +128,31 @@ div {
 
 #aboutme div.bioPic img {
 	height: auto;
-	width: 275px;
+	width: 300px;
     background-size: contain;
 }
 
+#aboutme div.bio, #aboutme div.skills {
+	text-align: left;
+}
+
 #experience {
-	background-color: #e6e6e6;
 	padding-bottom: 1em;
 	overflow:auto;	
 }
 
-#experience div {
+#experience h2 {
+	margin-top: 0;
+}
+
+#experience div, #aboutme div {
 	background-color: white;
 }
 
 #experience .oneexperience, #aboutme div.bio, #aboutme div.skills {
-	border: 2px solid rgb(44, 65, 67);
-	border-radius: .8em;
-	box-shadow: .2em .2em .2em rgb(44, 65, 67);
+	border: 2px solid rgba(0, 0, 0, .8);
+	border-radius: .5em;
+	box-shadow: .1em .1em .1em rgb(27, 62, 74);
 	padding: 0em 1em;
 	margin: .7em .7em;
 	display: inline-block;
@@ -182,21 +173,18 @@ button {
 
 #experience #Amazon #AmazonDescrip {
 	display: none;
+	text-align: left;
 }
 
 #experience #Evisions #EvisionsDescrip {
 	display: none;
+	text-align:left;
 }
 
 #contactme {
 	clear: both;
-	color: white;
-	background-color: rgb(27, 62, 74);
-	padding-bottom: 1.5em;
-}
-
-#contactme h2 {
-	color: white;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 #contactme div.info {
@@ -207,13 +195,17 @@ button {
 }
 
 #contactme div.info a {
-	color: white;
+	color: black;
 }
 
 .fa {
 	vertical-align: middle;
+	color: rgb(27, 62, 74);
 }
 
+#contactme .info .fa, #experience .oneexperience .fa {
+	color: rgba(0, 0, 0, .8);
+}
 
 /* Larger Screens */
 @media screen and ( min-width: 1600px ) {
@@ -237,19 +229,23 @@ button {
 		font-size: 2em;
 	}
 
+	#aboutme div {
+		display: inline-block;
+	}
+
 	#aboutme div.bioPic {
 		margin: 0 0;
 	}
 
 	#aboutme div.bioPic img {
 		height: auto;
-		width: 90%;
+		width: 50%;
 	    background-size: contain;
-	    margin: 0 0;
+	    margin: 1em 35%;
 	}
 
 	#experience .oneexperience, #aboutme div.bio, #aboutme div.skills {
-		width: 80%;
+		width: 90%;
 	}
 
 	#contactme div.info {
@@ -269,16 +265,12 @@ button {
 		width: 90%;
 	}
 
-	h2 {
-		width: 80%;
-	}
-
 	#home #navigation a {
 		padding: .7em .3em;
 	}
 
 	#home header {
-		margin-top: 17%;
+		margin-top: 50%;
 	}
 
 	#home header h1 {
@@ -293,6 +285,7 @@ button {
 		display: inline-block;
 		width: 90%;
 		margin: .9em 0em;
+		font-size: .8em;
 	}
 
 	#home header .description span {
